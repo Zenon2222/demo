@@ -24,7 +24,7 @@ public class DemoApplication {
 		ConfigurableApplicationContext  context = SpringApplication.run(DemoApplication.class, args);
 		ConfigurableListableBeanFactory beansFactory = context.getBeanFactory();
 
-        ConfigurableApplicationContext contextApp
+        //ConfigurableApplicationContext contextApp
         //= new AnnotationConfigApplicationContext(SecurityFilterChain.class);
         SecurityFilterChain chain = context.getBean(SecurityFilterChain.class);
         FilterChainProxy proxy = context.getBean(FilterChainProxy.class);
